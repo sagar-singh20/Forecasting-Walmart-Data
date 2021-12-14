@@ -31,7 +31,8 @@ option = st.sidebar.radio("Walmart Sales Forecasting", option_names , key="radio
 # st.session_state
 
 explore = eda(DATA_URL)
-data = explore.load_data()
+data_1 = explore.load_data()
+data = data_1.copy()
 rf_results = RandomForest(data, START_DATE )
 lstm_results = lstm_model(data, START_DATE)
 

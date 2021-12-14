@@ -9,12 +9,12 @@ class eda:
     def __init__(self, DATA_URL):
         self.DATA_URL = DATA_URL
 
-    # @st.cache
+    @st.cache
     def load_data(self):
         data = pd.read_csv(self.DATA_URL)
-        print(data.head())
         return data
 
+    # @st.cache
     def category_eda(self, option, data):
         if option == "Foods":
 
