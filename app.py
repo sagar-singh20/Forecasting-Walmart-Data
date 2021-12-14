@@ -12,11 +12,14 @@ from sklearn.preprocessing import MinMaxScaler
 from zipfile import ZipFile
 
 file_name = ['LSTM_Foods.zip','LSTM_Hobbies.zip','LSTM_Household.zip']
-for each in file_name:
-    with ZipFile(each, 'r') as zipObj:
-    # Extract all the contents of zip file in current directory
-        zipObj.extractall()
+@st.cache
+def extract(file_name):
+    for each in file_name:
+        with ZipFile(each, 'r') as zipObj:
+        # Extract all the contents of zip file in current directory
+            zipObj.extractall()
 
+extract(file_name)
 
 
 st.image('images/walmart.png', use_column_width = 'always')
@@ -112,6 +115,7 @@ elif option == "Modeling":
 
             x_train, x_test, y_train, y_test = lstm_results.transform_df_LSTM(x_train_sc, x_test_sc,y_train_sc, y_test_sc)
             st.write("STEP 4 - Fetching result from LSTM MODEL for Foods")
+            
             model = keras.models.load_model('LSTM_Foods')
             # make a prediction
 
