@@ -14,9 +14,15 @@ Furthermore, the dataset is organized in 3 CSV files :
  - Sales_train_evaluation.csv: Contains historical daily unit sales of each product on each store
  - Sell_prices.csv: price of products each week
 
+
+Detailed Report: https://github.com/sagar-singh20/Forecasting-Walmart-Data/blob/main/final/DS5500_P1_Report.pdf
+
+
 ## References
 [1] Eklund, J., and Kapetanios, G., 2008. “A Review of Fore-casting Techniques for Large Data Sets”.National Institute Economic Review,203, January, pp. 109–115. 
 
 [2] MOFC,2020.TheM5Competition.Onthewww,June.URL https://mofc.unic.ac.cy/m5-competition/.
 
 [3] Chambers, J. C., Mullick, S. K., and Smith, D. D.,1971.How to Choose the Right Forecasting Tech- nique. Tech. rep., Harvard Business Review, July. URL http://hbr.org/1971/07/how-to-choose-the-right-forecasting- technique.
+
+
